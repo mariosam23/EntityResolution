@@ -1,0 +1,9 @@
+pandas
+jellyfish
+python-Levenshtein
+networkx
+matplotlib
+seaborn
+tldextract
+text_unidecode
+cleanco

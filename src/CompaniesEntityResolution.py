@@ -392,5 +392,3 @@ class CompaniesEntityResolution:
 
         with open(output_path, 'w') as f:
             json.dump(readable_clusters, f, indent=2)
-
-        print(f"Saved cluster mappings to {os.path.abspath(output_path)}")
