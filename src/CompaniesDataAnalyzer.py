@@ -38,12 +38,11 @@ class CompaniesDataAnalyzer:
 
         # Plot the results
         plt.figure(figsize=(20, 8))
-        sns.barplot(x=filtered_columns.values, y=filtered_columns.index, palette="viridis")
+        sns.barplot(x=filtered_columns.values, y=filtered_columns.index, palette="viridis", orient='h', hue=filtered_columns.index, legend=False)
         plt.xlabel('Percentage of Non-Null Values')
         plt.ylabel('Columns')
         plt.title('Percentage of Non-Null Values per Column')
         plt.show()
-
 
     def set_key_fields(self, key_fields):
         """Set the key fields that should be prioritized in analysis."""
